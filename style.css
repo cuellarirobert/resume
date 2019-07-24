@@ -1,0 +1,230 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.5;
+  background: #323232;
+  color: #323232;
+  padding-top: 50px;
+  padding-right: 80px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+  border: transparent;
+}
+
+img {
+  max-width: 50%;
+  max-height: 60%;
+}
+
+
+
+.icon {
+  fill: currentColor;
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  overflow: visible;
+  margin-right: 10px;
+}
+
+
+
+a {
+  color: #323232;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  max-width: 2050px;
+  margin: 30px auto;
+  padding: 25px;
+  background: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+section:last-child {
+  border-bottom: none;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/***********************************
+* =Main Info
+***********************************/
+
+img.avatar {
+  width: 100px;
+  margin-left: 30px;
+}
+
+.my-name {
+  font-size: 60px;
+  line-height: 1;
+}
+
+.my-title {
+  font-size: 30px;
+  font-weight: 300;
+  color: #236FB2;
+}
+
+.links {
+  display: flex;
+  margin: 10px 0 20px 0;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.link-item svg {
+  margin-right: 8px;
+}
+
+/***********************************
+* =Experience
+***********************************/
+
+.job {
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.job:last-child {
+  border-bottom: none;
+  padding-bottom: 0px;
+}
+
+.job-title-container {
+  display: flex;
+  justify-content: left;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+
+.job-description {
+
+  position: relative;
+  left: 1em;
+  text-indent:  -1.275em;
+  margin-right: 2em;
+  font-size: 20px;
+}
+
+
+.job-company {
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color: grey;
+}
+
+.job-dates {
+  line-height: 1.2;
+  font-size: 20px;
+  font-weight: normal;
+  color: grey;
+  position:absolute;
+  right:150px;
+}
+
+
+h1 {
+    page-break-after: avoid;
+}
+
+
+/***********************************
+* =Skills
+***********************************/
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-right: 92px;
+  margin-bottom: 1px;
+}
+
+.skills-container ul {
+  margin-left: 20px;
+  list-style-type: disc;
+}
+
+/***********************************
+* =Interests
+***********************************/
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin-bottom: 2px;
+}
+
+
+
+/***********************************
+* =References
+***********************************/
+
+.reference {
+  font-size: 18px;
+}
+
+.reference-details {
+  margin-bottom: 2px;
+}
+
+@media only screen and (max-width : 768px) {
+  section {
+    grid-template-columns: 1fr;
+  }
+
+  .links, .job-title-container {
+    flex-direction: column;
+  }
+
+  .skills-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .interests-container {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .interests-container img {
+    margin-right: 32px;
+    margin-bottom: 16px;
+  }
+}
